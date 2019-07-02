@@ -1,0 +1,17 @@
+{
+  "name": "cvnorah",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mdi/font": "^3.7.95",
+    "foundation-sites": "^6.5.3",
+    "jquery": "^3.4.1",
+    "what-input": "^5.2.3"
+  }
+}

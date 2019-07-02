@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Material Design Icons";
+  src: url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot?v=3.7.95");
+  src: url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot?#iefix&v=3.7.95") format("embedded-opentype"), url("node_modules/@mdi/font/fonts/m/fontaterialdesignicons-webfont.woff2?v=3.7.95") format("woff2"), url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff?v=3.7.95") format("woff"), url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf?v=3.7.95") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+section#main {
+  padding: 24px;
+}
+
+#main header {
+  margin-bottom: 24px;
+}
+
+#coordinates p {
+  text-align: right;
+}
+
+#coordinates i.mdi {
+  margin-left: 16px;
+}
+
+#coordinates p.mdi::before {
+
+}
+
+#picture {
+  width: 200px;
+}
+
+.mdi::before {
+  margin-right: 8px;
+}
