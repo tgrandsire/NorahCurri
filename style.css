@@ -6,6 +6,22 @@
   font-style: normal;
 }
 
+html,
+body {
+  color: #333;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+
+
 
 section#main {
   padding: 24px;
@@ -33,4 +49,20 @@ section#main {
 
 .mdi::before {
   margin-right: 8px;
+}
+
+
+
+.cv-section {
+  margin-bottom: 32px;
+}
+
+#experience ul {
+  font-style: italic;
+  list-style-type: circle;
+}
+
+.experience {
+  border-bottom: 1px dotted #bbb;
+  margin-bottom: 16px;
 }

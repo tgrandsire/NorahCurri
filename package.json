@@ -12,6 +12,7 @@
     "@mdi/font": "^3.7.95",
     "foundation-sites": "^6.5.3",
     "jquery": "^3.4.1",
+    "npm": "^6.10.0",
     "what-input": "^5.2.3"
   }
 }
