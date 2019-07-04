@@ -6,26 +6,18 @@
   font-style: normal;
 }
 
-/*!
- * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-@font-face {
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-  src: url("node_modules/@fortawesome/fontawesome/webfonts/fa-regular-400.eot");
-  src: url("node_modules/@fortawesome/fontawesome/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("node_modules/@fortawesome/fontawesome/webfonts/fa-regular-400.woff2") format("woff2"), url("node_modules/fortawesome/fontawesome/webfonts/fa-regular-400.woff") format("woff"), url("node_modules/@fortawesome/fontawesome/webfonts/fa-regular-400.ttf") format("truetype"), url("node_modules/@fortawesome/fontawesome/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
-
-.far {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 400; }
-
-
 html,
 body {
   color: #333;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
 }
 
 h3 {
@@ -35,6 +27,7 @@ h3 {
 
 h4 {
   text-transform: uppercase;
+  font-weight: bold;
   font-size: 14px;
 }
 
@@ -46,17 +39,21 @@ ul {
   -webkit-box-shadow: 0px 0px 1px 1px rgba(187,187,187,1);
   -moz-box-shadow: 0px 0px 1px 1px rgba(187,187,187,1);
   box-shadow: 0px 0px 1px 1px rgba(187,187,187,1);
-  padding: 24px;
+  padding: 24px 24px 16px;
   border-radius: 3px;
+  background-color: #eef3fd;
 }
 
 
 section#main {
-  padding: 24px;
 }
 
 header {
-  margin-bottom: 32px;
+  margin-bottom: 8px;
+}
+
+header i {
+  font-size: 20px;
 }
 
 #picture {
@@ -66,6 +63,14 @@ header {
 
 #identity {
   padding-left: 24px;
+}
+
+
+/**
+ * Coordinates
+ */
+#coordinates {
+  font-size: 18px;
 }
 
 #coordinates p {
@@ -84,11 +89,8 @@ header {
   margin-right: 8px;
 }
 
-
-
 .cv-section {
-  margin-bottom: 32px;
-
+  margin-bottom: 8px;
 }
 
 /**
@@ -98,17 +100,25 @@ header {
   list-style-type: circle;
 }
 
-.experience {
+.experience,
+.formation {
   border-bottom: 1px dotted #bbb;
   margin-bottom: 16px;
 }
 
-.experience__title {
+.experience:last-child,
+.formation:last-child {
+  border-bottom: 0 none;
+}
+
+.experience__title,
+.formation__title {
   margin-bottom: 0;
   font-size: 18px;
 }
 
-.experience__information {
+.experience__information,
+.formation__information {
   font-size: 14px;
   font-style: italic;
 }
@@ -118,5 +128,13 @@ header {
  * Compétences
  */
 #skills ul + h4 {
+  margin-top: 24px;
+}
+
+
+/**
+ * Activités
+ */
+#activity dd + dt {
   margin-top: 24px;
 }
