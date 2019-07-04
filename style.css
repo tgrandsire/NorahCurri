@@ -1,14 +1,36 @@
 @font-face {
   font-family: "Material Design Icons";
   src: url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot?v=3.7.95");
-  src: url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot?#iefix&v=3.7.95") format("embedded-opentype"), url("node_modules/@mdi/font/fonts/m/fontaterialdesignicons-webfont.woff2?v=3.7.95") format("woff2"), url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff?v=3.7.95") format("woff"), url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf?v=3.7.95") format("truetype");
+  src: url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot?#iefix&v=3.7.95") format("embedded-opentype"), url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2?v=3.7.95") format("woff2"), url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff?v=3.7.95") format("woff"), url("node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf?v=3.7.95") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
+/*!
+ * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("node_modules/@fortawesome/fontawesome/webfonts/fa-regular-400.eot");
+  src: url("node_modules/@fortawesome/fontawesome/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("node_modules/@fortawesome/fontawesome/webfonts/fa-regular-400.woff2") format("woff2"), url("node_modules/fortawesome/fontawesome/webfonts/fa-regular-400.woff") format("woff"), url("node_modules/@fortawesome/fontawesome/webfonts/fa-regular-400.ttf") format("truetype"), url("node_modules/@fortawesome/fontawesome/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
+
 html,
 body {
   color: #333;
+}
+
+h3 {
+  font-size: 26px;
+  margin-bottom: 16px;
 }
 
 h4 {
@@ -20,15 +42,30 @@ ul {
   list-style-type: circle;
 }
 
-
+.box {
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(187,187,187,1);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(187,187,187,1);
+  box-shadow: 0px 0px 1px 1px rgba(187,187,187,1);
+  padding: 24px;
+  border-radius: 3px;
+}
 
 
 section#main {
   padding: 24px;
 }
 
-#main header {
-  margin-bottom: 24px;
+header {
+  margin-bottom: 32px;
+}
+
+#picture {
+  width: 200px;
+  border-radius: 3px;
+}
+
+#identity {
+  padding-left: 24px;
 }
 
 #coordinates p {
@@ -43,10 +80,6 @@ section#main {
 
 }
 
-#picture {
-  width: 200px;
-}
-
 .mdi::before {
   margin-right: 8px;
 }
@@ -55,14 +88,35 @@ section#main {
 
 .cv-section {
   margin-bottom: 32px;
+
 }
 
+/**
+ * Expériences
+ */
 #experience ul {
-  font-style: italic;
   list-style-type: circle;
 }
 
 .experience {
   border-bottom: 1px dotted #bbb;
   margin-bottom: 16px;
+}
+
+.experience__title {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.experience__information {
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+/**
+ * Compétences
+ */
+#skills ul + h4 {
+  margin-top: 24px;
 }
