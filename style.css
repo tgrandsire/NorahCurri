@@ -48,8 +48,10 @@ ul {
   background-color: #eef3fd;
 }
 
-
-section#main {
+@media print {
+  section#main {
+    margin-top: 30px;
+  } 
 }
 
 header {
