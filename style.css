@@ -12,6 +12,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.grid-container {
+  max-width: 83em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
 }
@@ -98,6 +102,10 @@ header i {
  */
 #experience ul {
   list-style-type: circle;
+}
+
+#experience ul li {
+  font-size: 12px;
 }
 
 .experience,
